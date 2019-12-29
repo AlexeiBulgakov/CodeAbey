@@ -25,5 +25,5 @@ func main() {
 	valuesInStr = strings.TrimSuffix(valuesInStr, "\n")
 	values := toIntMas(strings.Fields(valuesInStr))
 	sort.Ints(values)
-	fmt.Printf("%v %v", values[0], values[len(values)-1])
+	fmt.Printf("%v %v", values[len(values)-1], values[0])
 }
